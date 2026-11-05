@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Polygonasion (BETA TESTING)</title>
+<link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <canvas id="game-canvas"></canvas>
+        
+        <!-- UI Elements -->
+        <div id="ui-container">
+         <!--   <div class="stat-row">
+                <div class="stat-label">Score</div>
+                <div id="score-value" class="stat-value">0</div>
+            </div> -->
+            <div class="stat-row">
+                <div class="stat-label">Wave</div>
+                <div id="wave" class="stat-value">1</div>
+            </div>
+            <div class="kill-counter">
+                <div class="ki-item">
+                    <div class="kill-label">Enemies Killed</div>
+                    <div id="enemies-killed" class="kill-value">0</div>
+                </div>
+                <div class="kill-item">
+                    <div class="kill-label">Bosses Killed</div>
+                    <div id="bosses-killed" class="kill-value">0</div>
+                </div>
+            </div>
+            <!--<div class="player-name-container">
+                <div class="stat-label">Username:</div>
+                <div id="username" class="stat-value"> placeholder </div> -->
+            </div>
+        </div>
+
+        <div id="player-name-above-bar">Unnamed</div>
+
+        <div id="bottom-ui">
+            <div class="progress-container">
+                <div class="progress-label">Level</div>
+                <div class="combined-bar">
+                    <div id="level-bar" class="progress-fill level-fill" style="width: 0%"></div>
+                    <div class="level-text">
+                        <span id="level-text">1</span>
+                    </div>
+                </div>
+                <div class="progress-value" id="level-progress-value">1</div>
+            </div>
+            <div class="progress-container">
+    <div class="progress-label">Score</div>
+    <div class="combined-bar">
+        <div id="score-bar" class="progress-fill score-fill" style="width: 0%"></div>
+        <div class="score-text">
+            <span id="xp-gain-display">0 XP</span>
+        </div>
+    </div>
+    <div class="progress-value" id="score-progress-value">0</div>
+</div>
+        </div>
+
+        <canvas id="minimap"></canvas>
+
+        <div id="wave-indicator">
+            <div id="wave-number">Wave 1</div>
+        </div>
+
+        <div id="player-health-bar">
+            <div id="player-health-fill" style="width: 100%"></div>
+        </div>
+
+        <!-- Game Menu -->
+<div id="game-menu">
+    <div class="menu-decoration" id="menu-decoration"></div>
+    <div class="menu-content">
+
+        <div class="menu-discord">
+            <iframe src="https://discordapp.com/widget?id=1190702769259159634&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            <div class="menu-discord-buttons">
+                <form action="https://arras.io/" method="post" target="_blank">
+                    <input class="menu-link-btn menu-link-teal" type="submit" value="Original Arras.io">
+                </form>
+                <form action="https://docs.google.com/forms/d/e/1FAIpQLSfWJeS7ct9iWTyCdNkATys7qYBTX7oD-gY2-fwtSK0Agg7hpw/viewform" method="get" target="_blank">
+                    <input class="menu-link-btn menu-link-blue" type="submit" value="Submit A Record">
+                </form>
+                <form action="https://docs.google.com/spreadsheets/d/1b-ZcM2OvWxaUIH2xZtzxd19thXprtZb5weXBlEBF0Vc/edit" method="get" target="_blank">
+                    <input class="menu-link-btn menu-link-blue" type="submit" value="See World Records">
+                </form>
+                <form action="https://discord.gg/gYt6ENuNsS" method="post" target="_blank">
+                    <input class="menu-link-btn menu-link-teal" type="submit" value="Our Discord">
+                </form>
+                <form action="https://www.reddit.com/r/woomyio/" method="get" target="_blank">
+                    <input class="menu-link-btn menu-link-teal" type="submit" value="Our Reddit">
+                </form>
+                <form action="https://discord.gg/AGKE69C" method="get" target="_blank">
+                    <input class="menu-link-btn menu-link-blue" type="submit" value="Main Arras.io Discord">
+                </form>
+            </div>
+        </div>
+
+        <div class="menu-left">
+            <h1 class="game-logo">Polygonasion.io</h1>
+            <p class="game-subtitle">A game related to Siege.</p>
+
+            <div class="server-list">
+                <div class="server-table-header">
+                    <span>Server</span>
+                    <span>Players</span>
+                </div>
+                <div class="server-rows">
+                    <div class="server-info selected" data-server="bossrush">
+                        <div class="server-mode">Test Bossrush</div>
+                        <div class="server-players">0/1</div>
+                    </div>
+                    <div class="server-info" data-server="maze">
+                        <div class="server-mode">Maze</div>
+                        <div class="server-players">0/1</div>
+                    </div>
+                </div>
+            </div>
+
+            <input type="text" id="username-input" class="username-input" placeholder="This is the tale of..." maxlength="24" value="">
+
+            <button id="start-btn" class="menu-btn">Play</button>
+        </div>
+
+        <div class="changelog">
+            <iframe src="polygonasion.io/changelog.html" placeholder="If you see this text that means it didnt load :p"></iframe>
+        </div>
+
+    </div>
+</div>
+
+        <!-- Game Over Screen -->
+        <div id="game-over">
+    <h1>You Died</h1>
+    <div class="game-over-stats">
+        <p>Killed by: <span id="death-cause">Unknown</span></p>
+        <p>Final Score: <span id="final-score">0</span></p>
+        <p>Wave Reached: <span id="final-wave">1</span></p>
+        <p>Level: <span id="final-level">1</span></p>
+        <p>Player: <span id="final-username">Player</span></p>
+        <p>Enemies Defeated: <span id="final-enemies">0</span></p>
+        <p>Bosses Killed: <span id="final-bosses">0</span></p>
+    </div>
+    <button id="restart-btn" class="menu-btn">Respawn</button> 
+    <button id="menu-to-game" class="menu-btn">Back to Menu</button>
+</div>
+    </div>
+
+   <!-- Upgrade Menu (im dumb for putting this in html) -->
+<div id="upgrade-menu" class="upgrade-menu">
+    <h3>x<span id="skill-points">0</span></h3>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-body"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-body" style="width: 0%"></div></div>
+        <div class="upgrade-level">[1]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-health"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-health" style="width: 0%"></div></div>
+        <div class="upgrade-level">[2]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-regen"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-regen" style="width: 0%"></div></div>
+        <div class="upgrade-level">[3]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-penetration"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-penetration" style="width: 0%"></div></div>
+        <div class="upgrade-level">[4]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-bullethealth"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-bullethealth" style="width: 0%"></div></div>
+        <div class="upgrade-level">[4]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-bulletdmg"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-bulletdmg" style="width: 0%"></div></div>
+        <div class="upgrade-level">[5]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-reload"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-reload" style="width: 0%"></div></div>
+        <div class="upgrade-level">[6]</div>
+    </div>
+    <div class="upgrade-item">
+        <div class="upgrade-dot upgrade-speed"></div>
+        <div class="upgrade-bar"><div class="upgrade-fill upgrade-speed" style="width: 0%"></div></div>
+        <div class="upgrade-level">[7]</div>
+    </div>
+    <div class="upgrade-help">Press 'U' to toggle upgrade menu</div>
+</div>
+
+    <script src="js/definitions.js"></script>
+    <script src="js/tankdefinitions.js"></script>
+    <script src="js/mazegeneration.js"></script>
+    <script src="js/game.js"></script>
+    <!-- <script src="js/mapgen.js"></script> -->
+</body>
+</html>
