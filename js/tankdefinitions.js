@@ -1,1 +1,1371 @@
-const _0x31d6d7=_0x3636;function _0x44ee(){const _0x7dee2a=['1565544LeGFjh','Octo','#3ca4cb','Sniper','Booster','Auto-Tank','#a0a0a0','1030008jsqpJL','Hexa','rect','1635774HHTrJf','Basic','2010288IDoldH','2474148JSZNTb','Triple\x20Auto\x20Tank','#969696','Flank\x20Guard','Triplet','119934IDSGpn','#616161','MachineGunner','#646464','5aLcSHP','Triangle','#25667e','#33333300','Triple\x20Auto-Tank','Auto\x20Tank','Twin','triangle','816312bLwrtr','Twin\x20Double','Pentashot'];_0x44ee=function(){return _0x7dee2a;};return _0x44ee();}(function(_0x598e56,_0x2db9fd){const _0x3e810d=_0x3636,_0x442cf6=_0x598e56();while(!![]){try{const _0x39758d=parseInt(_0x3e810d(0xa4))/0x1+parseInt(_0x3e810d(0xb0))/0x2+-parseInt(_0x3e810d(0xba))/0x3+parseInt(_0x3e810d(0x9f))/0x4*(-parseInt(_0x3e810d(0xa8))/0x5)+parseInt(_0x3e810d(0x9c))/0x6+parseInt(_0x3e810d(0x9e))/0x7+parseInt(_0x3e810d(0xb3))/0x8;if(_0x39758d===_0x2db9fd)break;else _0x442cf6['push'](_0x442cf6['shift']());}catch(_0x1deea5){_0x442cf6['push'](_0x442cf6['shift']());}}}(_0x44ee,0x4e8bb));function _0x3636(_0x24fb10,_0x3f1c63){_0x24fb10=_0x24fb10-0x9c;const _0x44eeba=_0x44ee();let _0x3636b5=_0x44eeba[_0x24fb10];return _0x3636b5;}const TankDefinitions={'Basic':{'name':_0x31d6d7(0x9d),'tier':0x1,'children':[_0x31d6d7(0xae),_0x31d6d7(0xa6),_0x31d6d7(0xb6),_0x31d6d7(0xa2),_0x31d6d7(0xb8)],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':1.2}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0xa,'maxMovementSpeed':0x5},'bullet':{'radius':0xd,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Twin':{'name':_0x31d6d7(0xae),'tier':0x2,'children':[_0x31d6d7(0xa3),'Twin\x20Double'],'body':{'radius':0x20,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':'rect','angle':0x0,'offsetX':0x0,'offsetY':-0xf,'length':0x32,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x0,'knockback':0.6},{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0xf,'length':0x32,'width':0x19,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.6}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x7,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':'#3ca4cb','outline':'#25667e','outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'MachineGunner':{'name':'Machine\x20Gunner','tier':0x2,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':'#25667e','outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xaf),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x1e,'width':0x32,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0.18,'barrelDelay':0x0,'knockback':0.4}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xc,'bulletPenetration':0x1,'bulletReload':0x3,'bulletDamage':0x5,'maxMovementSpeed':4.8},'bullet':{'radius':0xd,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xc,'life':0x5a},'zoom':0x1},'Sniper':{'name':'Sniper','tier':0x2,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x4e,'width':0x1c,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0x3}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0x10,'bulletPenetration':0x2,'bulletReload':0x18,'bulletDamage':0x19,'maxMovementSpeed':4.6},'bullet':{'radius':0xd,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0x10,'life':0xf0},'zoom':0.85},'Flank\x20Guard':{'name':'Flank\x20Guard','tier':0x2,'children':[_0x31d6d7(0xbb),_0x31d6d7(0xa9)],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0x78*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x64,'knockback':0.4},{'shape':'rect','angle':-0x78*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x64,'knockback':0.4}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Auto-Tank':{'name':_0x31d6d7(0xad),'tier':0x2,'children':[_0x31d6d7(0xac)],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0x1}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'turrets':[{'offsetX':0x0,'offsetY':0x0,'angle':Math['PI']/0xb4,'body':{'radius':0x10,'color':_0x31d6d7(0xb9),'outline':'#646464','outlineWidth':2.5},'barrels':[{'shape':'rect','angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x18,'width':0xe,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':2.5,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.3}],'stats':{'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xc,'bulletDamage':0x6},'bullet':{'radius':0x8,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x2,'speed':0xa,'life':0x78},'detectionRange':0x190,'spinWhenIdle':![],'idleSpinSpeed':0.02,'turnSpeed':0.15,'overlap':!![]}],'zoom':0x1},'Triplet':{'name':_0x31d6d7(0xa3),'tier':0x3,'children':[_0x31d6d7(0xb2)],'body':{'radius':0x20,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':-0.25,'offsetX':0x0,'offsetY':-0xa,'length':0x20,'width':0x19,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x28,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0.25,'offsetX':0x0,'offsetY':0xa,'length':0x20,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x50,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x34,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.6}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x6,'maxMovementSpeed':0x5},'bullet':{'radius':0xa,'color':'#3ca4cb','outline':'#25667e','outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Twin\x20Double':{'name':_0x31d6d7(0xb1),'tier':0x3,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':'#25667e','outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':-0xf,'length':0x32,'width':0x19,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.6},{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0xf,'length':0x32,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.6},{'shape':_0x31d6d7(0xbc),'angle':0xb4*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':-0xf,'length':0x32,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.6},{'shape':_0x31d6d7(0xbc),'angle':0xb4*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0xf,'length':0x32,'width':0x19,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x64,'knockback':0.6}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x7,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Hexa':{'name':_0x31d6d7(0xbb),'tier':0x3,'children':[_0x31d6d7(0xb4)],'body':{'radius':0x20,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.5},{'shape':'rect','angle':0x3c*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.5},{'shape':_0x31d6d7(0xbc),'angle':-0x3c*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.5},{'shape':_0x31d6d7(0xbc),'angle':0x78*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x0,'knockback':0.5},{'shape':_0x31d6d7(0xbc),'angle':-0x78*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.5},{'shape':_0x31d6d7(0xbc),'angle':0xb4*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x64,'knockback':0.5}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Triangle':{'name':_0x31d6d7(0xa9),'tier':0x3,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x0,'knockback':0.4},{'shape':'rect','angle':0x96*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.9},{'shape':'rect','angle':-0x96*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64,'knockback':0.9}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Triple\x20Auto-Tank':{'name':_0x31d6d7(0xa0),'tier':0x3,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':'rect','angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0x1}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'turrets':[{'offsetX':0x0,'offsetY':-0x12,'body':{'radius':0xe,'color':_0x31d6d7(0xb9),'outline':_0x31d6d7(0xa7),'outlineWidth':2.5},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x18,'width':0xe,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':2.5,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.3}],'stats':{'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xc,'bulletDamage':0x6},'bullet':{'radius':0x8,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x2,'speed':0xa,'life':0x78},'detectionRange':0x190,'spinWhenIdle':![],'idleSpinSpeed':0.02,'turnSpeed':0.15,'overlap':!![]},{'offsetX':0x0,'offsetY':0x12,'body':{'radius':0xe,'color':_0x31d6d7(0xb9),'outline':'#646464','outlineWidth':2.5},'barrels':[{'shape':'rect','angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x18,'width':0xe,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':2.5,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.3}],'stats':{'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xc,'bulletDamage':0x6},'bullet':{'radius':0x8,'color':'#3ca4cb','outline':_0x31d6d7(0xaa),'outlineWidth':0x2,'speed':0xa,'life':0x78},'detectionRange':0x190,'spinWhenIdle':![],'idleSpinSpeed':0.02,'turnSpeed':0.15,'overlap':!![]},{'offsetX':-0x12,'offsetY':0x0,'body':{'radius':0xe,'color':'#a0a0a0','outline':_0x31d6d7(0xa7),'outlineWidth':2.5},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x18,'width':0xe,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':2.5,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.3}],'stats':{'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xc,'bulletDamage':0x6},'bullet':{'radius':0x8,'color':_0x31d6d7(0xb5),'outline':'#25667e','outlineWidth':0x2,'speed':0xa,'life':0x78},'detectionRange':0x190,'spinWhenIdle':![],'idleSpinSpeed':0.02,'turnSpeed':0.15,'overlap':!![]}],'zoom':0x1},'Pentashot':{'name':_0x31d6d7(0xb2),'tier':0x4,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':'rect','angle':-0.65,'offsetX':-0xa,'offsetY':-0x8,'length':0x1c,'width':0x14,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x78,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0.65,'offsetX':-0xa,'offsetY':0x8,'length':0x1c,'width':0x14,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0xa0,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':-0.25,'offsetX':0x0,'offsetY':-0xa,'length':0x20,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x28,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0.25,'offsetX':0x0,'offsetY':0xa,'length':0x20,'width':0x19,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x50,'knockback':0.4},{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x34,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0,'knockback':0.4}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x5,'maxMovementSpeed':0x5},'bullet':{'radius':0x9,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Octo':{'name':_0x31d6d7(0xb4),'tier':0x4,'children':[],'body':{'radius':0x20,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':0x2d*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':-0x2d*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':0x5a*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':'#969696','outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':-0x5a*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':0x87*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':-0x87*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':'rect','angle':0xb4*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x32,'width':0x1c,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':'#33333300','spread':0x0,'barrelDelay':0x0}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x8,'maxMovementSpeed':0x5},'bullet':{'radius':0xb,'color':'#3ca4cb','outline':'#25667e','outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1},'Booster':{'name':_0x31d6d7(0xb7),'tier':0x4,'children':[],'body':{'radius':0x20,'color':'#3ca4cb','outline':'#25667e','outlineWidth':0x3},'barrels':[{'shape':_0x31d6d7(0xbc),'angle':0x0,'offsetX':0x0,'offsetY':0x0,'length':0x2d,'width':0x1c,'color':'#969696','outline':'#616161','outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x0},{'shape':_0x31d6d7(0xbc),'angle':0x96*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x1e,'width':0x18,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64},{'shape':_0x31d6d7(0xbc),'angle':-0x96*(Math['PI']/0xb4),'offsetX':0x0,'offsetY':0x0,'length':0x1e,'width':0x18,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x3,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64},{'shape':'rect','angle':Math['PI'],'offsetX':0x0,'offsetY':-0xe,'length':0x12,'width':0xa,'color':'#969696','outline':'#616161','outlineWidth':0x2,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64},{'shape':'rect','angle':Math['PI'],'offsetX':0x0,'offsetY':-0x5,'length':0x12,'width':0xa,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x2,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64},{'shape':_0x31d6d7(0xbc),'angle':Math['PI'],'offsetX':0x0,'offsetY':0x5,'length':0x12,'width':0xa,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x2,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64},{'shape':_0x31d6d7(0xbc),'angle':Math['PI'],'offsetX':0x0,'offsetY':0xe,'length':0x12,'width':0xa,'color':_0x31d6d7(0xa1),'outline':_0x31d6d7(0xa5),'outlineWidth':0x2,'tipColor':_0x31d6d7(0xab),'spread':0x0,'barrelDelay':0x64}],'stats':{'damage':0xa,'hpRegen':0.1,'maxHp':0x64,'bulletSpeed':0xa,'bulletPenetration':0x1,'bulletReload':0xa,'bulletDamage':0x7,'maxMovementSpeed':0x5},'bullet':{'radius':0xa,'color':_0x31d6d7(0xb5),'outline':_0x31d6d7(0xaa),'outlineWidth':0x3,'speed':0xa,'life':0x8c},'zoom':0x1}};
+const _0x1704aa = _0x1788;
+(function (_0x2c3563, _0x353826) {
+    const _0x5940f8 = _0x1788;
+    const _0x1624e4 = _0x2c3563();
+    while (!![]) {
+        try {
+            const _0xd8ae11 = -parseInt(_0x5940f8(0x15f)) / 0x1 * (parseInt(_0x5940f8(0x154)) / 0x2) + parseInt(_0x5940f8(0x14d)) / 0x3 + -parseInt(_0x5940f8(0x150)) / 0x4 + parseInt(_0x5940f8(0x16b)) / 0x5 * (parseInt(_0x5940f8(0x156)) / 0x6) + parseInt(_0x5940f8(0x162)) / 0x7 + parseInt(_0x5940f8(0x158)) / 0x8 + -parseInt(_0x5940f8(0x152)) / 0x9;
+            if (_0xd8ae11 === _0x353826) {
+                break;
+            } else {
+                _0x1624e4['push'](_0x1624e4['shift']());
+            }
+        } catch (_0x405ccb) {
+            _0x1624e4['push'](_0x1624e4['shift']());
+        }
+    }
+}(_0x1afc, 0xacb3e));
+function _0x1788(_0x18c396, _0x4017b2) {
+    _0x18c396 = _0x18c396 - 0x14b;
+    const _0x1afc22 = _0x1afc();
+    let _0x17886d = _0x1afc22[_0x18c396];
+    return _0x17886d;
+}
+const _0x19a1b0 = {
+    'Basic': {
+        'name': _0x1704aa(0x14f),
+        '_0x2c195f': 0x1,
+        'children': [
+            _0x1704aa(0x14e),
+            _0x1704aa(0x165),
+            'Sniper',
+            _0x1704aa(0x169),
+            'Auto-Tank'
+        ],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [{
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 1.2
+            }],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0xa,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xd,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Twin': {
+        'name': _0x1704aa(0x14e),
+        '_0x2c195f': 0x2,
+        'children': [
+            _0x1704aa(0x15a),
+            _0x1704aa(0x166)
+        ],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': -0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.6
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.6
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x7,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'MachineGunner': {
+        'name': _0x1704aa(0x14b),
+        '_0x2c195f': 0x2,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [{
+                'shape': _0x1704aa(0x15c),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x1e,
+                'width': 0x32,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0.18,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.4
+            }],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xc,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0x3,
+            '_0x5bebdc': 0x5,
+            '_0x35feb0': 4.8
+        },
+        '_0x5a6de0': {
+            'radius': 0xd,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3,
+            'speed': 0xc,
+            '_0x151711': 0x5a
+        },
+        'zoom': 0x1
+    },
+    'Sniper': {
+        'name': _0x1704aa(0x167),
+        '_0x2c195f': 0x2,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [{
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x4e,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0x3
+            }],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0x10,
+            '_0x92d24a': 0x2,
+            '_0x3c907a': 0x18,
+            '_0x5bebdc': 0x19,
+            '_0x35feb0': 4.6
+        },
+        '_0x5a6de0': {
+            'radius': 0xd,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0x10,
+            '_0x151711': 0xf0
+        },
+        'zoom': 0.85
+    },
+    'Flank\x20Guard': {
+        'name': _0x1704aa(0x169),
+        '_0x2c195f': 0x2,
+        'children': [
+            _0x1704aa(0x14c),
+            _0x1704aa(0x16a)
+        ],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': 'rect',
+                'angle': 0x78 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': 'rect',
+                'angle': -0x78 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.4
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': '#3ca4cb',
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Auto-Tank': {
+        'name': _0x1704aa(0x159),
+        '_0x2c195f': 0x2,
+        'children': [_0x1704aa(0x168)],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [{
+                'shape': 'rect',
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0x1
+            }],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        '_0x10b2d2': [{
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'angle': Math['PI'] / 0xb4,
+                'body': {
+                    'radius': 0x10,
+                    'color': _0x1704aa(0x164),
+                    'outline': '#646464',
+                    'outlineWidth': 2.5
+                },
+                '_0x53d387': [{
+                        'shape': _0x1704aa(0x161),
+                        'angle': 0x0,
+                        'offsetX': 0x0,
+                        'offsetY': 0x0,
+                        'length': 0x18,
+                        'width': 0xe,
+                        'color': _0x1704aa(0x15b),
+                        'outline': '#616161',
+                        'outlineWidth': 2.5,
+                        '_0x6f7e38': _0x1704aa(0x15d),
+                        '_0x1faeec': 0x0,
+                        '_0xdbf6d1': 0x0,
+                        '_0x5898ea': 0.3
+                    }],
+                'stats': {
+                    '_0x4bfc6d': 0xa,
+                    '_0x92d24a': 0x1,
+                    '_0x3c907a': 0xc,
+                    '_0x5bebdc': 0x6
+                },
+                '_0x5a6de0': {
+                    'radius': 0x8,
+                    'color': '#3ca4cb',
+                    'outline': '#25667e',
+                    'outlineWidth': 0x2,
+                    'speed': 0xa,
+                    '_0x151711': 0x78
+                },
+                '_0xdff35b': 0x190,
+                '_0x2674db': ![],
+                '_0xf39d4c': 0.02,
+                '_0x4bde81': 0.15,
+                '_0x1e84a2': !![]
+            }],
+        'zoom': 0x1
+    },
+    'Triplet': {
+        'name': _0x1704aa(0x15a),
+        '_0x2c195f': 0x3,
+        'children': [_0x1704aa(0x153)],
+        'body': {
+            'radius': 0x20,
+            'color': '#3ca4cb',
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0.25,
+                'offsetX': 0x0,
+                'offsetY': -0xa,
+                'length': 0x20,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x28,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': 'rect',
+                'angle': 0.25,
+                'offsetX': 0x0,
+                'offsetY': 0xa,
+                'length': 0x20,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x50,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x34,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.6
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x6,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xa,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Twin\x20Double': {
+        'name': _0x1704aa(0x166),
+        '_0x2c195f': 0x3,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': '#3ca4cb',
+            'outline': '#25667e',
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': -0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.6
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.6
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0xb4 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': -0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.6
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0xb4 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0xf,
+                'length': 0x32,
+                'width': 0x19,
+                'color': '#969696',
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.6
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x7,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Hexa': {
+        'name': _0x1704aa(0x14c),
+        '_0x2c195f': 0x3,
+        'children': [_0x1704aa(0x160)],
+        'body': {
+            'radius': 0x20,
+            'color': '#3ca4cb',
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.5
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x3c * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.5
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x3c * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.5
+            },
+            {
+                'shape': 'rect',
+                'angle': 0x78 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.5
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x78 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.5
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0xb4 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.5
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Triangle': {
+        'name': _0x1704aa(0x16a),
+        '_0x2c195f': 0x3,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': 'rect',
+                'angle': 0x96 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.9
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x96 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64,
+                '_0x5898ea': 0.9
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Triple\x20Auto-Tank': {
+        'name': _0x1704aa(0x155),
+        '_0x2c195f': 0x3,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [{
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0x1
+            }],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        '_0x10b2d2': [
+            {
+                'offsetX': 0x0,
+                'offsetY': -0x12,
+                'body': {
+                    'radius': 0xe,
+                    'color': _0x1704aa(0x164),
+                    'outline': _0x1704aa(0x163),
+                    'outlineWidth': 2.5
+                },
+                '_0x53d387': [{
+                        'shape': 'rect',
+                        'angle': 0x0,
+                        'offsetX': 0x0,
+                        'offsetY': 0x0,
+                        'length': 0x18,
+                        'width': 0xe,
+                        'color': _0x1704aa(0x15b),
+                        'outline': _0x1704aa(0x16c),
+                        'outlineWidth': 2.5,
+                        '_0x6f7e38': _0x1704aa(0x15d),
+                        '_0x1faeec': 0x0,
+                        '_0xdbf6d1': 0x0,
+                        '_0x5898ea': 0.3
+                    }],
+                'stats': {
+                    '_0x4bfc6d': 0xa,
+                    '_0x92d24a': 0x1,
+                    '_0x3c907a': 0xc,
+                    '_0x5bebdc': 0x6
+                },
+                '_0x5a6de0': {
+                    'radius': 0x8,
+                    'color': _0x1704aa(0x15e),
+                    'outline': _0x1704aa(0x151),
+                    'outlineWidth': 0x2,
+                    'speed': 0xa,
+                    '_0x151711': 0x78
+                },
+                '_0xdff35b': 0x190,
+                '_0x2674db': ![],
+                '_0xf39d4c': 0.02,
+                '_0x4bde81': 0.15,
+                '_0x1e84a2': !![]
+            },
+            {
+                'offsetX': 0x0,
+                'offsetY': 0x12,
+                'body': {
+                    'radius': 0xe,
+                    'color': _0x1704aa(0x164),
+                    'outline': _0x1704aa(0x163),
+                    'outlineWidth': 2.5
+                },
+                '_0x53d387': [{
+                        'shape': _0x1704aa(0x161),
+                        'angle': 0x0,
+                        'offsetX': 0x0,
+                        'offsetY': 0x0,
+                        'length': 0x18,
+                        'width': 0xe,
+                        'color': _0x1704aa(0x15b),
+                        'outline': '#616161',
+                        'outlineWidth': 2.5,
+                        '_0x6f7e38': '#33333300',
+                        '_0x1faeec': 0x0,
+                        '_0xdbf6d1': 0x0,
+                        '_0x5898ea': 0.3
+                    }],
+                'stats': {
+                    '_0x4bfc6d': 0xa,
+                    '_0x92d24a': 0x1,
+                    '_0x3c907a': 0xc,
+                    '_0x5bebdc': 0x6
+                },
+                '_0x5a6de0': {
+                    'radius': 0x8,
+                    'color': '#3ca4cb',
+                    'outline': _0x1704aa(0x151),
+                    'outlineWidth': 0x2,
+                    'speed': 0xa,
+                    '_0x151711': 0x78
+                },
+                '_0xdff35b': 0x190,
+                '_0x2674db': ![],
+                '_0xf39d4c': 0.02,
+                '_0x4bde81': 0.15,
+                '_0x1e84a2': !![]
+            },
+            {
+                'offsetX': -0x12,
+                'offsetY': 0x0,
+                'body': {
+                    'radius': 0xe,
+                    'color': _0x1704aa(0x164),
+                    'outline': '#646464',
+                    'outlineWidth': 2.5
+                },
+                '_0x53d387': [{
+                        'shape': 'rect',
+                        'angle': 0x0,
+                        'offsetX': 0x0,
+                        'offsetY': 0x0,
+                        'length': 0x18,
+                        'width': 0xe,
+                        'color': _0x1704aa(0x15b),
+                        'outline': _0x1704aa(0x16c),
+                        'outlineWidth': 2.5,
+                        '_0x6f7e38': '#33333300',
+                        '_0x1faeec': 0x0,
+                        '_0xdbf6d1': 0x0,
+                        '_0x5898ea': 0.3
+                    }],
+                'stats': {
+                    '_0x4bfc6d': 0xa,
+                    '_0x92d24a': 0x1,
+                    '_0x3c907a': 0xc,
+                    '_0x5bebdc': 0x6
+                },
+                '_0x5a6de0': {
+                    'radius': 0x8,
+                    'color': _0x1704aa(0x15e),
+                    'outline': _0x1704aa(0x151),
+                    'outlineWidth': 0x2,
+                    'speed': 0xa,
+                    '_0x151711': 0x78
+                },
+                '_0xdff35b': 0x190,
+                '_0x2674db': ![],
+                '_0xf39d4c': 0.02,
+                '_0x4bde81': 0.15,
+                '_0x1e84a2': !![]
+            }
+        ],
+        'zoom': 0x1
+    },
+    'Pentashot': {
+        'name': 'Pentashot',
+        '_0x2c195f': 0x4,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0.65,
+                'offsetX': -0xa,
+                'offsetY': -0x8,
+                'length': 0x1c,
+                'width': 0x14,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x78,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0.65,
+                'offsetX': -0xa,
+                'offsetY': 0x8,
+                'length': 0x1c,
+                'width': 0x14,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0xa0,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0.25,
+                'offsetX': 0x0,
+                'offsetY': -0xa,
+                'length': 0x20,
+                'width': 0x19,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x28,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': 'rect',
+                'angle': 0.25,
+                'offsetX': 0x0,
+                'offsetY': 0xa,
+                'length': 0x20,
+                'width': 0x19,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x50,
+                '_0x5898ea': 0.4
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x34,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0,
+                '_0x5898ea': 0.4
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x5,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0x9,
+            'color': '#3ca4cb',
+            'outline': '#25667e',
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Octo': {
+        'name': _0x1704aa(0x160),
+        '_0x2c195f': 0x4,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x2d * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x2d * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': '#616161',
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x5a * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x5a * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0x87 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': 'rect',
+                'angle': -0x87 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': 0xb4 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x32,
+                'width': 0x1c,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x8,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xb,
+            'color': _0x1704aa(0x15e),
+            'outline': _0x1704aa(0x151),
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    },
+    'Booster': {
+        'name': _0x1704aa(0x157),
+        '_0x2c195f': 0x4,
+        'children': [],
+        'body': {
+            'radius': 0x20,
+            'color': '#3ca4cb',
+            'outline': '#25667e',
+            'outlineWidth': 0x3
+        },
+        '_0x53d387': [
+            {
+                'shape': 'rect',
+                'angle': 0x0,
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x2d,
+                'width': 0x1c,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x0
+            },
+            {
+                'shape': 'rect',
+                'angle': 0x96 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x1e,
+                'width': 0x18,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': -0x96 * (Math['PI'] / 0xb4),
+                'offsetX': 0x0,
+                'offsetY': 0x0,
+                'length': 0x1e,
+                'width': 0x18,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x3,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': Math['PI'],
+                'offsetX': 0x0,
+                'offsetY': -0xe,
+                'length': 0x12,
+                'width': 0xa,
+                'color': '#969696',
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x2,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            },
+            {
+                'shape': 'rect',
+                'angle': Math['PI'],
+                'offsetX': 0x0,
+                'offsetY': -0x5,
+                'length': 0x12,
+                'width': 0xa,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x2,
+                '_0x6f7e38': '#33333300',
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            },
+            {
+                'shape': 'rect',
+                'angle': Math['PI'],
+                'offsetX': 0x0,
+                'offsetY': 0x5,
+                'length': 0x12,
+                'width': 0xa,
+                'color': '#969696',
+                'outline': '#616161',
+                'outlineWidth': 0x2,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            },
+            {
+                'shape': _0x1704aa(0x161),
+                'angle': Math['PI'],
+                'offsetX': 0x0,
+                'offsetY': 0xe,
+                'length': 0x12,
+                'width': 0xa,
+                'color': _0x1704aa(0x15b),
+                'outline': _0x1704aa(0x16c),
+                'outlineWidth': 0x2,
+                '_0x6f7e38': _0x1704aa(0x15d),
+                '_0x1faeec': 0x0,
+                '_0xdbf6d1': 0x64
+            }
+        ],
+        'stats': {
+            '_0x4db468': 0xa,
+            '_0x61d352': 0.1,
+            '_0x2b43fc': 0x64,
+            '_0x4bfc6d': 0xa,
+            '_0x92d24a': 0x1,
+            '_0x3c907a': 0xa,
+            '_0x5bebdc': 0x7,
+            '_0x35feb0': 0x5
+        },
+        '_0x5a6de0': {
+            'radius': 0xa,
+            'color': _0x1704aa(0x15e),
+            'outline': '#25667e',
+            'outlineWidth': 0x3,
+            'speed': 0xa,
+            '_0x151711': 0x8c
+        },
+        'zoom': 0x1
+    }
+};
+function _0x1afc() {
+    const _0x412cf7 = [
+        'Basic',
+        '1469964RgGjAO',
+        '#25667e',
+        '9873540SOHftr',
+        'Pentashot',
+        '639708dkzMxH',
+        'Triple\x20Auto\x20Tank',
+        '829266aYgZLJ',
+        'Booster',
+        '2823288xODaHr',
+        'Auto\x20Tank',
+        'Triplet',
+        '#969696',
+        'triangle',
+        '#33333300',
+        '#3ca4cb',
+        '2bBcMIo',
+        'Octo',
+        'rect',
+        '7212093PHxWTj',
+        '#646464',
+        '#a0a0a0',
+        'MachineGunner',
+        'Twin\x20Double',
+        'Sniper',
+        'Triple\x20Auto-Tank',
+        'Flank\x20Guard',
+        'Triangle',
+        '5dkYRav',
+        '#616161',
+        'Machine\x20Gunner',
+        'Hexa',
+        '3870684SVpUgV',
+        'Twin'
+    ];
+    _0x1afc = function () {
+        return _0x412cf7;
+    };
+    return _0x1afc();
+}
