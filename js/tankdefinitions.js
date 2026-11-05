@@ -1,1371 +1,421 @@
-const _0x1704aa = _0x1788;
-(function (_0x2c3563, _0x353826) {
-    const _0x5940f8 = _0x1788;
-    const _0x1624e4 = _0x2c3563();
+const _0x8b5556 = _0x3911;
+(function (_0x1bbefb, _0x128cf1) {
+    const _0x2d13e = _0x3911;
+    const _0x15432b = _0x1bbefb();
     while (!![]) {
         try {
-            const _0xd8ae11 = -parseInt(_0x5940f8(0x15f)) / 0x1 * (parseInt(_0x5940f8(0x154)) / 0x2) + parseInt(_0x5940f8(0x14d)) / 0x3 + -parseInt(_0x5940f8(0x150)) / 0x4 + parseInt(_0x5940f8(0x16b)) / 0x5 * (parseInt(_0x5940f8(0x156)) / 0x6) + parseInt(_0x5940f8(0x162)) / 0x7 + parseInt(_0x5940f8(0x158)) / 0x8 + -parseInt(_0x5940f8(0x152)) / 0x9;
-            if (_0xd8ae11 === _0x353826) {
+            const _0x4600e3 = -parseInt(_0x2d13e(0x178)) / 0x1 + parseInt(_0x2d13e(0x17c)) / 0x2 * (-parseInt(_0x2d13e(0x17a)) / 0x3) + -parseInt(_0x2d13e(0x17b)) / 0x4 * (-parseInt(_0x2d13e(0x183)) / 0x5) + parseInt(_0x2d13e(0x184)) / 0x6 + parseInt(_0x2d13e(0x196)) / 0x7 * (parseInt(_0x2d13e(0x188)) / 0x8) + -parseInt(_0x2d13e(0x199)) / 0x9 + parseInt(_0x2d13e(0x181)) / 0xa;
+            if (_0x4600e3 === _0x128cf1) {
                 break;
             } else {
-                _0x1624e4['push'](_0x1624e4['shift']());
+                _0x15432b['push'](_0x15432b['shift']());
             }
-        } catch (_0x405ccb) {
-            _0x1624e4['push'](_0x1624e4['shift']());
+        } catch (_0x452bac) {
+            _0x15432b['push'](_0x15432b['shift']());
         }
     }
-}(_0x1afc, 0xacb3e));
-function _0x1788(_0x18c396, _0x4017b2) {
-    _0x18c396 = _0x18c396 - 0x14b;
-    const _0x1afc22 = _0x1afc();
-    let _0x17886d = _0x1afc22[_0x18c396];
-    return _0x17886d;
+}(_0x433f, 0x6e962));
+const _0x5b394a = GameDefinitions[_0x8b5556(0x193)][_0x8b5556(0x195)]['radius'] * 0x2 * 2.5;
+let _0x192e84 = [];
+function _0x82863a() {
+    const _0x2c3932 = _0x8b5556;
+    const _0x37604a = new Date();
+    return _0x37604a[_0x2c3932(0x17e)]() * 0x2710 + (_0x37604a['getMonth']() + 0x1) * 0x64 + _0x37604a[_0x2c3932(0x198)]();
 }
-const _0x19a1b0 = {
-    'Basic': {
-        'name': _0x1704aa(0x14f),
-        '_0x2c195f': 0x1,
-        'children': [
-            _0x1704aa(0x14e),
-            _0x1704aa(0x165),
-            'Sniper',
-            _0x1704aa(0x169),
-            'Auto-Tank'
-        ],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [{
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 1.2
-            }],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0xa,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xd,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Twin': {
-        'name': _0x1704aa(0x14e),
-        '_0x2c195f': 0x2,
-        'children': [
-            _0x1704aa(0x15a),
-            _0x1704aa(0x166)
-        ],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': -0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.6
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.6
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x7,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'MachineGunner': {
-        'name': _0x1704aa(0x14b),
-        '_0x2c195f': 0x2,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [{
-                'shape': _0x1704aa(0x15c),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x1e,
-                'width': 0x32,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0.18,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.4
-            }],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xc,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0x3,
-            '_0x5bebdc': 0x5,
-            '_0x35feb0': 4.8
-        },
-        '_0x5a6de0': {
-            'radius': 0xd,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3,
-            'speed': 0xc,
-            '_0x151711': 0x5a
-        },
-        'zoom': 0x1
-    },
-    'Sniper': {
-        'name': _0x1704aa(0x167),
-        '_0x2c195f': 0x2,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [{
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x4e,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0x3
-            }],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0x10,
-            '_0x92d24a': 0x2,
-            '_0x3c907a': 0x18,
-            '_0x5bebdc': 0x19,
-            '_0x35feb0': 4.6
-        },
-        '_0x5a6de0': {
-            'radius': 0xd,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0x10,
-            '_0x151711': 0xf0
-        },
-        'zoom': 0.85
-    },
-    'Flank\x20Guard': {
-        'name': _0x1704aa(0x169),
-        '_0x2c195f': 0x2,
-        'children': [
-            _0x1704aa(0x14c),
-            _0x1704aa(0x16a)
-        ],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': 'rect',
-                'angle': 0x78 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': 'rect',
-                'angle': -0x78 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.4
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': '#3ca4cb',
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Auto-Tank': {
-        'name': _0x1704aa(0x159),
-        '_0x2c195f': 0x2,
-        'children': [_0x1704aa(0x168)],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [{
-                'shape': 'rect',
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0x1
-            }],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        '_0x10b2d2': [{
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'angle': Math['PI'] / 0xb4,
-                'body': {
-                    'radius': 0x10,
-                    'color': _0x1704aa(0x164),
-                    'outline': '#646464',
-                    'outlineWidth': 2.5
-                },
-                '_0x53d387': [{
-                        'shape': _0x1704aa(0x161),
-                        'angle': 0x0,
-                        'offsetX': 0x0,
-                        'offsetY': 0x0,
-                        'length': 0x18,
-                        'width': 0xe,
-                        'color': _0x1704aa(0x15b),
-                        'outline': '#616161',
-                        'outlineWidth': 2.5,
-                        '_0x6f7e38': _0x1704aa(0x15d),
-                        '_0x1faeec': 0x0,
-                        '_0xdbf6d1': 0x0,
-                        '_0x5898ea': 0.3
-                    }],
-                'stats': {
-                    '_0x4bfc6d': 0xa,
-                    '_0x92d24a': 0x1,
-                    '_0x3c907a': 0xc,
-                    '_0x5bebdc': 0x6
-                },
-                '_0x5a6de0': {
-                    'radius': 0x8,
-                    'color': '#3ca4cb',
-                    'outline': '#25667e',
-                    'outlineWidth': 0x2,
-                    'speed': 0xa,
-                    '_0x151711': 0x78
-                },
-                '_0xdff35b': 0x190,
-                '_0x2674db': ![],
-                '_0xf39d4c': 0.02,
-                '_0x4bde81': 0.15,
-                '_0x1e84a2': !![]
-            }],
-        'zoom': 0x1
-    },
-    'Triplet': {
-        'name': _0x1704aa(0x15a),
-        '_0x2c195f': 0x3,
-        'children': [_0x1704aa(0x153)],
-        'body': {
-            'radius': 0x20,
-            'color': '#3ca4cb',
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0.25,
-                'offsetX': 0x0,
-                'offsetY': -0xa,
-                'length': 0x20,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x28,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': 'rect',
-                'angle': 0.25,
-                'offsetX': 0x0,
-                'offsetY': 0xa,
-                'length': 0x20,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x50,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x34,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.6
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x6,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xa,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Twin\x20Double': {
-        'name': _0x1704aa(0x166),
-        '_0x2c195f': 0x3,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': '#3ca4cb',
-            'outline': '#25667e',
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': -0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.6
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.6
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0xb4 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': -0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.6
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0xb4 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0xf,
-                'length': 0x32,
-                'width': 0x19,
-                'color': '#969696',
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.6
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x7,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Hexa': {
-        'name': _0x1704aa(0x14c),
-        '_0x2c195f': 0x3,
-        'children': [_0x1704aa(0x160)],
-        'body': {
-            'radius': 0x20,
-            'color': '#3ca4cb',
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.5
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x3c * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.5
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x3c * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.5
-            },
-            {
-                'shape': 'rect',
-                'angle': 0x78 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.5
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x78 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.5
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0xb4 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.5
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Triangle': {
-        'name': _0x1704aa(0x16a),
-        '_0x2c195f': 0x3,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': 'rect',
-                'angle': 0x96 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.9
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x96 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64,
-                '_0x5898ea': 0.9
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Triple\x20Auto-Tank': {
-        'name': _0x1704aa(0x155),
-        '_0x2c195f': 0x3,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [{
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0x1
-            }],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        '_0x10b2d2': [
-            {
-                'offsetX': 0x0,
-                'offsetY': -0x12,
-                'body': {
-                    'radius': 0xe,
-                    'color': _0x1704aa(0x164),
-                    'outline': _0x1704aa(0x163),
-                    'outlineWidth': 2.5
-                },
-                '_0x53d387': [{
-                        'shape': 'rect',
-                        'angle': 0x0,
-                        'offsetX': 0x0,
-                        'offsetY': 0x0,
-                        'length': 0x18,
-                        'width': 0xe,
-                        'color': _0x1704aa(0x15b),
-                        'outline': _0x1704aa(0x16c),
-                        'outlineWidth': 2.5,
-                        '_0x6f7e38': _0x1704aa(0x15d),
-                        '_0x1faeec': 0x0,
-                        '_0xdbf6d1': 0x0,
-                        '_0x5898ea': 0.3
-                    }],
-                'stats': {
-                    '_0x4bfc6d': 0xa,
-                    '_0x92d24a': 0x1,
-                    '_0x3c907a': 0xc,
-                    '_0x5bebdc': 0x6
-                },
-                '_0x5a6de0': {
-                    'radius': 0x8,
-                    'color': _0x1704aa(0x15e),
-                    'outline': _0x1704aa(0x151),
-                    'outlineWidth': 0x2,
-                    'speed': 0xa,
-                    '_0x151711': 0x78
-                },
-                '_0xdff35b': 0x190,
-                '_0x2674db': ![],
-                '_0xf39d4c': 0.02,
-                '_0x4bde81': 0.15,
-                '_0x1e84a2': !![]
-            },
-            {
-                'offsetX': 0x0,
-                'offsetY': 0x12,
-                'body': {
-                    'radius': 0xe,
-                    'color': _0x1704aa(0x164),
-                    'outline': _0x1704aa(0x163),
-                    'outlineWidth': 2.5
-                },
-                '_0x53d387': [{
-                        'shape': _0x1704aa(0x161),
-                        'angle': 0x0,
-                        'offsetX': 0x0,
-                        'offsetY': 0x0,
-                        'length': 0x18,
-                        'width': 0xe,
-                        'color': _0x1704aa(0x15b),
-                        'outline': '#616161',
-                        'outlineWidth': 2.5,
-                        '_0x6f7e38': '#33333300',
-                        '_0x1faeec': 0x0,
-                        '_0xdbf6d1': 0x0,
-                        '_0x5898ea': 0.3
-                    }],
-                'stats': {
-                    '_0x4bfc6d': 0xa,
-                    '_0x92d24a': 0x1,
-                    '_0x3c907a': 0xc,
-                    '_0x5bebdc': 0x6
-                },
-                '_0x5a6de0': {
-                    'radius': 0x8,
-                    'color': '#3ca4cb',
-                    'outline': _0x1704aa(0x151),
-                    'outlineWidth': 0x2,
-                    'speed': 0xa,
-                    '_0x151711': 0x78
-                },
-                '_0xdff35b': 0x190,
-                '_0x2674db': ![],
-                '_0xf39d4c': 0.02,
-                '_0x4bde81': 0.15,
-                '_0x1e84a2': !![]
-            },
-            {
-                'offsetX': -0x12,
-                'offsetY': 0x0,
-                'body': {
-                    'radius': 0xe,
-                    'color': _0x1704aa(0x164),
-                    'outline': '#646464',
-                    'outlineWidth': 2.5
-                },
-                '_0x53d387': [{
-                        'shape': 'rect',
-                        'angle': 0x0,
-                        'offsetX': 0x0,
-                        'offsetY': 0x0,
-                        'length': 0x18,
-                        'width': 0xe,
-                        'color': _0x1704aa(0x15b),
-                        'outline': _0x1704aa(0x16c),
-                        'outlineWidth': 2.5,
-                        '_0x6f7e38': '#33333300',
-                        '_0x1faeec': 0x0,
-                        '_0xdbf6d1': 0x0,
-                        '_0x5898ea': 0.3
-                    }],
-                'stats': {
-                    '_0x4bfc6d': 0xa,
-                    '_0x92d24a': 0x1,
-                    '_0x3c907a': 0xc,
-                    '_0x5bebdc': 0x6
-                },
-                '_0x5a6de0': {
-                    'radius': 0x8,
-                    'color': _0x1704aa(0x15e),
-                    'outline': _0x1704aa(0x151),
-                    'outlineWidth': 0x2,
-                    'speed': 0xa,
-                    '_0x151711': 0x78
-                },
-                '_0xdff35b': 0x190,
-                '_0x2674db': ![],
-                '_0xf39d4c': 0.02,
-                '_0x4bde81': 0.15,
-                '_0x1e84a2': !![]
-            }
-        ],
-        'zoom': 0x1
-    },
-    'Pentashot': {
-        'name': 'Pentashot',
-        '_0x2c195f': 0x4,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0.65,
-                'offsetX': -0xa,
-                'offsetY': -0x8,
-                'length': 0x1c,
-                'width': 0x14,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x78,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0.65,
-                'offsetX': -0xa,
-                'offsetY': 0x8,
-                'length': 0x1c,
-                'width': 0x14,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0xa0,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0.25,
-                'offsetX': 0x0,
-                'offsetY': -0xa,
-                'length': 0x20,
-                'width': 0x19,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x28,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': 'rect',
-                'angle': 0.25,
-                'offsetX': 0x0,
-                'offsetY': 0xa,
-                'length': 0x20,
-                'width': 0x19,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x50,
-                '_0x5898ea': 0.4
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x34,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0,
-                '_0x5898ea': 0.4
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x5,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0x9,
-            'color': '#3ca4cb',
-            'outline': '#25667e',
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Octo': {
-        'name': _0x1704aa(0x160),
-        '_0x2c195f': 0x4,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x2d * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x2d * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': '#616161',
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x5a * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x5a * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0x87 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': 'rect',
-                'angle': -0x87 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': 0xb4 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x32,
-                'width': 0x1c,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x8,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xb,
-            'color': _0x1704aa(0x15e),
-            'outline': _0x1704aa(0x151),
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    },
-    'Booster': {
-        'name': _0x1704aa(0x157),
-        '_0x2c195f': 0x4,
-        'children': [],
-        'body': {
-            'radius': 0x20,
-            'color': '#3ca4cb',
-            'outline': '#25667e',
-            'outlineWidth': 0x3
-        },
-        '_0x53d387': [
-            {
-                'shape': 'rect',
-                'angle': 0x0,
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x2d,
-                'width': 0x1c,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x0
-            },
-            {
-                'shape': 'rect',
-                'angle': 0x96 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x1e,
-                'width': 0x18,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': -0x96 * (Math['PI'] / 0xb4),
-                'offsetX': 0x0,
-                'offsetY': 0x0,
-                'length': 0x1e,
-                'width': 0x18,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x3,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': Math['PI'],
-                'offsetX': 0x0,
-                'offsetY': -0xe,
-                'length': 0x12,
-                'width': 0xa,
-                'color': '#969696',
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x2,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            },
-            {
-                'shape': 'rect',
-                'angle': Math['PI'],
-                'offsetX': 0x0,
-                'offsetY': -0x5,
-                'length': 0x12,
-                'width': 0xa,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x2,
-                '_0x6f7e38': '#33333300',
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            },
-            {
-                'shape': 'rect',
-                'angle': Math['PI'],
-                'offsetX': 0x0,
-                'offsetY': 0x5,
-                'length': 0x12,
-                'width': 0xa,
-                'color': '#969696',
-                'outline': '#616161',
-                'outlineWidth': 0x2,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            },
-            {
-                'shape': _0x1704aa(0x161),
-                'angle': Math['PI'],
-                'offsetX': 0x0,
-                'offsetY': 0xe,
-                'length': 0x12,
-                'width': 0xa,
-                'color': _0x1704aa(0x15b),
-                'outline': _0x1704aa(0x16c),
-                'outlineWidth': 0x2,
-                '_0x6f7e38': _0x1704aa(0x15d),
-                '_0x1faeec': 0x0,
-                '_0xdbf6d1': 0x64
-            }
-        ],
-        'stats': {
-            '_0x4db468': 0xa,
-            '_0x61d352': 0.1,
-            '_0x2b43fc': 0x64,
-            '_0x4bfc6d': 0xa,
-            '_0x92d24a': 0x1,
-            '_0x3c907a': 0xa,
-            '_0x5bebdc': 0x7,
-            '_0x35feb0': 0x5
-        },
-        '_0x5a6de0': {
-            'radius': 0xa,
-            'color': _0x1704aa(0x15e),
-            'outline': '#25667e',
-            'outlineWidth': 0x3,
-            'speed': 0xa,
-            '_0x151711': 0x8c
-        },
-        'zoom': 0x1
-    }
-};
-function _0x1afc() {
-    const _0x412cf7 = [
-        'Basic',
-        '1469964RgGjAO',
-        '#25667e',
-        '9873540SOHftr',
-        'Pentashot',
-        '639708dkzMxH',
-        'Triple\x20Auto\x20Tank',
-        '829266aYgZLJ',
-        'Booster',
-        '2823288xODaHr',
-        'Auto\x20Tank',
-        'Triplet',
-        '#969696',
-        'triangle',
-        '#33333300',
-        '#3ca4cb',
-        '2bBcMIo',
-        'Octo',
-        'rect',
-        '7212093PHxWTj',
-        '#646464',
-        '#a0a0a0',
-        'MachineGunner',
-        'Twin\x20Double',
-        'Sniper',
-        'Triple\x20Auto-Tank',
-        'Flank\x20Guard',
-        'Triangle',
-        '5dkYRav',
-        '#616161',
-        'Machine\x20Gunner',
-        'Hexa',
-        '3870684SVpUgV',
-        'Twin'
-    ];
-    _0x1afc = function () {
-        return _0x412cf7;
+function _0x2ea35d(_0x18944f) {
+    return function () {
+        const _0x4d503f = _0x3911;
+        _0x18944f |= 0x0;
+        _0x18944f = _0x18944f + 0x6d2b79f5 | 0x0;
+        let _0x132e43 = Math[_0x4d503f(0x180)](_0x18944f ^ _0x18944f >>> 0xf, 0x1 | _0x18944f);
+        _0x132e43 = _0x132e43 + Math[_0x4d503f(0x180)](_0x132e43 ^ _0x132e43 >>> 0x7, 0x3d | _0x132e43) ^ _0x132e43;
+        return ((_0x132e43 ^ _0x132e43 >>> 0xe) >>> 0x0) / 0x100000000;
     };
-    return _0x1afc();
+}
+function _0x4ad0f8() {
+    const _0x562893 = _0x8b5556;
+    _0x192e84 = [];
+    const _0x5e18c2 = _0x5b394a;
+    const _0x5cc206 = 0x29;
+    const _0x8dad0f = _0x5cc206 * _0x5e18c2;
+    const _0x1cb3bd = (canvas['width'] - _0x8dad0f) / 0x2;
+    const _0x31221b = (canvas[_0x562893(0x185)] - _0x8dad0f) / 0x2;
+    const _0xec8773 = 0x3e8;
+    const _0x5b8d0d = canvas['width'] / 0x2 - _0xec8773;
+    const _0x23e287 = canvas[_0x562893(0x185)] / 0x2 - _0xec8773;
+    const _0x5dc248 = canvas[_0x562893(0x18e)] / 0x2 + _0xec8773;
+    const _0x582e39 = canvas[_0x562893(0x185)] / 0x2 + _0xec8773;
+    const _0x3c0e0e = (_0x5c0287, _0x453c8c) => {
+        const _0x8a83 = _0x1cb3bd + _0x5c0287 * _0x5e18c2, _0x626853 = _0x31221b + _0x453c8c * _0x5e18c2;
+        const _0x15e59f = _0x8a83 + _0x5e18c2, _0x2f18b3 = _0x626853 + _0x5e18c2;
+        return !(_0x15e59f <= _0x5b8d0d || _0x8a83 >= _0x5dc248 || _0x2f18b3 <= _0x23e287 || _0x626853 >= _0x582e39);
+    };
+    const _0x4138db = _0x2ea35d(_0x82863a());
+    const _0x479db7 = new Array(_0x5cc206 * _0x5cc206)[_0x562893(0x18b)](!![]);
+    const _0x2c7612 = new Array(_0x5cc206 * _0x5cc206)[_0x562893(0x18b)](![]);
+    _0x479db7[0x1 * _0x5cc206 + 0x1] = ![];
+    _0x2c7612[0x1 * _0x5cc206 + 0x1] = !![];
+    const _0x4622fd = [];
+    const _0x1b7de3 = (_0x26afb4, _0x53be6a) => {
+        const _0x572ffc = _0x562893;
+        const _0x4831ca = [
+            [
+                0x0,
+                -0x2
+            ],
+            [
+                0x0,
+                0x2
+            ],
+            [
+                -0x2,
+                0x0
+            ],
+            [
+                0x2,
+                0x0
+            ]
+        ];
+        for (const [_0x460ae8, _0xd28927] of _0x4831ca) {
+            const _0x4fa341 = _0x26afb4 + _0x460ae8, _0x3d5525 = _0x53be6a + _0xd28927;
+            if (_0x4fa341 >= 0x1 && _0x4fa341 <= 0x13 && _0x3d5525 >= 0x1 && _0x3d5525 <= 0x13 && !_0x2c7612[_0x3d5525 * _0x5cc206 + _0x4fa341]) {
+                _0x4622fd[_0x572ffc(0x191)]([
+                    _0x4fa341,
+                    _0x3d5525,
+                    _0x26afb4 + _0x460ae8 / 0x2,
+                    _0x53be6a + _0xd28927 / 0x2
+                ]);
+            }
+        }
+    };
+    _0x1b7de3(0x1, 0x1);
+    while (_0x4622fd[_0x562893(0x17f)] > 0x0) {
+        const _0x4e946c = Math[_0x562893(0x194)](_0x4138db() * _0x4622fd['length']);
+        const [_0xcb7ebd, _0x4082d3, _0x58e393, _0x3acd8e] = _0x4622fd[_0x4e946c];
+        _0x4622fd[_0x562893(0x19a)](_0x4e946c, 0x1);
+        if (_0x2c7612[_0x4082d3 * _0x5cc206 + _0xcb7ebd])
+            continue;
+        _0x479db7[_0x4082d3 * _0x5cc206 + _0xcb7ebd] = ![];
+        _0x479db7[_0x3acd8e * _0x5cc206 + _0x58e393] = ![];
+        _0x2c7612[_0x4082d3 * _0x5cc206 + _0xcb7ebd] = !![];
+        _0x1b7de3(_0xcb7ebd, _0x4082d3);
+    }
+    for (let _0x18760d = 0x0; _0x18760d < 0x2; _0x18760d++) {
+        for (let _0x2fe8da = 0x1; _0x2fe8da <= 0x13; _0x2fe8da++) {
+            for (let _0x1667cf = 0x1; _0x1667cf <= 0x13; _0x1667cf++) {
+                if (_0x479db7[_0x2fe8da * _0x5cc206 + _0x1667cf])
+                    continue;
+                let _0x3786f5 = 0x0;
+                const _0x14d4b3 = [];
+                const _0x19623d = [
+                    [
+                        0x0,
+                        -0x1
+                    ],
+                    [
+                        0x0,
+                        0x1
+                    ],
+                    [
+                        -0x1,
+                        0x0
+                    ],
+                    [
+                        0x1,
+                        0x0
+                    ]
+                ];
+                for (const [_0x544ef1, _0x5cd4e3] of _0x19623d) {
+                    const _0x2037f2 = _0x1667cf + _0x544ef1, _0x36c63f = _0x2fe8da + _0x5cd4e3;
+                    if (_0x2037f2 < 0x1 || _0x2037f2 > 0x13 || _0x36c63f < 0x1 || _0x36c63f > 0x13)
+                        continue;
+                    if (!_0x479db7[_0x36c63f * _0x5cc206 + _0x2037f2])
+                        _0x3786f5++;
+                    else
+                        _0x14d4b3[_0x562893(0x191)]([
+                            _0x2037f2,
+                            _0x36c63f
+                        ]);
+                }
+                if (_0x3786f5 <= 0x1 && _0x14d4b3['length'] > 0x0 && _0x4138db() < 0.8) {
+                    const [_0x72120f, _0x52cf5c] = _0x14d4b3[Math[_0x562893(0x194)](_0x4138db() * _0x14d4b3[_0x562893(0x17f)])];
+                    _0x479db7[_0x52cf5c * _0x5cc206 + _0x72120f] = ![];
+                }
+            }
+        }
+    }
+    for (let _0x2138fc = 0x1; _0x2138fc <= 0x13; _0x2138fc++) {
+        for (let _0x11d0bc = 0x1; _0x11d0bc <= 0x13; _0x11d0bc++) {
+            if (!_0x479db7[_0x2138fc * _0x5cc206 + _0x11d0bc])
+                continue;
+            if (_0x4138db() < 0.15)
+                _0x479db7[_0x2138fc * _0x5cc206 + _0x11d0bc] = ![];
+        }
+    }
+    const _0x1596ca = [
+        0x4,
+        0xa,
+        0x10
+    ];
+    for (const _0x18c69d of _0x1596ca) {
+        _0x479db7[_0x18c69d * _0x5cc206 + 0x13] = ![];
+        _0x479db7[_0x18c69d * _0x5cc206 + 0x14] = ![];
+        _0x479db7[0x13 * _0x5cc206 + _0x18c69d] = ![];
+        _0x479db7[0x14 * _0x5cc206 + _0x18c69d] = ![];
+    }
+    for (let _0x2d84d1 = 0x1; _0x2d84d1 <= 0x13; _0x2d84d1++) {
+        for (let _0x3cb638 = 0x1; _0x3cb638 <= 0x13; _0x3cb638++) {
+            if (_0x479db7[_0x2d84d1 * _0x5cc206 + _0x3cb638])
+                continue;
+            let _0x5d80e2 = 0x0;
+            const _0x5c2f88 = [];
+            const _0x25de08 = [
+                [
+                    0x0,
+                    -0x1
+                ],
+                [
+                    0x0,
+                    0x1
+                ],
+                [
+                    -0x1,
+                    0x0
+                ],
+                [
+                    0x1,
+                    0x0
+                ]
+            ];
+            for (const [_0x4d78a5, _0x2a89c2] of _0x25de08) {
+                const _0x285eb2 = _0x3cb638 + _0x4d78a5, _0x1458d4 = _0x2d84d1 + _0x2a89c2;
+                if (_0x285eb2 < 0x1 || _0x285eb2 > 0x13 || _0x1458d4 < 0x1 || _0x1458d4 > 0x13)
+                    continue;
+                if (!_0x479db7[_0x1458d4 * _0x5cc206 + _0x285eb2])
+                    _0x5d80e2++;
+                else
+                    _0x5c2f88[_0x562893(0x191)]([
+                        _0x285eb2,
+                        _0x1458d4
+                    ]);
+            }
+            if (_0x5d80e2 <= 0x1 && _0x5c2f88[_0x562893(0x17f)] > 0x0) {
+                const [_0x24ac49, _0x4945fa] = _0x5c2f88[Math[_0x562893(0x194)](_0x4138db() * _0x5c2f88[_0x562893(0x17f)])];
+                _0x479db7[_0x4945fa * _0x5cc206 + _0x24ac49] = ![];
+            }
+        }
+    }
+    function _0x35d33f(_0x33db6a, _0x23e030, _0x43cd5b, _0x1aaf41) {
+        let _0x2eaa82 = _0x33db6a, _0x285933 = _0x23e030;
+        for (let _0x17b8a5 = 0x0; _0x17b8a5 < 0x8; _0x17b8a5++) {
+            if (_0x2eaa82 < 0x0 || _0x2eaa82 > 0x13 || _0x285933 < 0x0 || _0x285933 > 0x13)
+                break;
+            if (_0x17b8a5 > 0x0 && !_0x479db7[_0x285933 * _0x5cc206 + _0x2eaa82])
+                break;
+            _0x479db7[_0x285933 * _0x5cc206 + _0x2eaa82] = ![];
+            _0x2eaa82 += _0x43cd5b;
+            _0x285933 += _0x1aaf41;
+        }
+    }
+    for (const _0x5bd053 of [
+            0x4,
+            0xa,
+            0x10
+        ]) {
+        _0x35d33f(_0x5bd053, 0x0, 0x0, 0x1);
+        _0x35d33f(0x0, _0x5bd053, 0x1, 0x0);
+    }
+    const _0x13e4f2 = new Set();
+    for (let _0x2f7c32 = 0x0; _0x2f7c32 <= 0x14; _0x2f7c32++) {
+        for (let _0x486547 = 0x0; _0x486547 <= 0x14; _0x486547++) {
+            if (!_0x479db7[_0x2f7c32 * _0x5cc206 + _0x486547])
+                continue;
+            const _0x3ab1e4 = [
+                [
+                    _0x486547,
+                    _0x2f7c32
+                ],
+                [
+                    0x28 - _0x486547,
+                    _0x2f7c32
+                ],
+                [
+                    _0x486547,
+                    0x28 - _0x2f7c32
+                ],
+                [
+                    0x28 - _0x486547,
+                    0x28 - _0x2f7c32
+                ]
+            ];
+            for (const [_0x1336e3, _0x527fd5] of _0x3ab1e4) {
+                if (_0x1336e3 < 0x0 || _0x1336e3 >= _0x5cc206 || _0x527fd5 < 0x0 || _0x527fd5 >= _0x5cc206)
+                    continue;
+                const _0x35d797 = _0x527fd5 * _0x5cc206 + _0x1336e3;
+                if (_0x13e4f2[_0x562893(0x18a)](_0x35d797))
+                    continue;
+                _0x13e4f2[_0x562893(0x197)](_0x35d797);
+                if (_0x3c0e0e(_0x1336e3, _0x527fd5))
+                    continue;
+                _0x192e84[_0x562893(0x191)]({
+                    'x': _0x1cb3bd + _0x1336e3 * _0x5e18c2,
+                    'y': _0x31221b + _0x527fd5 * _0x5e18c2,
+                    'size': _0x5e18c2
+                });
+            }
+        }
+    }
+}
+function _0x4f07d6(_0x1fced7) {
+    const _0x510af6 = _0x8b5556;
+    for (const _0x4cc680 of _0x192e84) {
+        const _0xe40b15 = Math[_0x510af6(0x190)](_0x4cc680['x'], Math['min'](_0x1fced7['x'], _0x4cc680['x'] + _0x4cc680[_0x510af6(0x17d)]));
+        const _0x5a8127 = Math[_0x510af6(0x190)](_0x4cc680['y'], Math['min'](_0x1fced7['y'], _0x4cc680['y'] + _0x4cc680[_0x510af6(0x17d)]));
+        const _0xa3965b = _0x1fced7['x'] - _0xe40b15;
+        const _0x8e950f = _0x1fced7['y'] - _0x5a8127;
+        const _0x440e23 = _0xa3965b * _0xa3965b + _0x8e950f * _0x8e950f;
+        if (_0x440e23 === 0x0) {
+            const _0x3c692c = _0x1fced7['x'] - _0x4cc680['x'];
+            const _0x3ad76b = _0x4cc680['x'] + _0x4cc680[_0x510af6(0x17d)] - _0x1fced7['x'];
+            const _0x54e0a8 = _0x1fced7['y'] - _0x4cc680['y'];
+            const _0x58422d = _0x4cc680['y'] + _0x4cc680[_0x510af6(0x17d)] - _0x1fced7['y'];
+            const _0x5c2159 = Math[_0x510af6(0x192)](_0x3c692c, _0x3ad76b, _0x54e0a8, _0x58422d);
+            if (_0x5c2159 === _0x3c692c)
+                _0x1fced7['x'] = _0x4cc680['x'] - _0x1fced7[_0x510af6(0x189)];
+            else if (_0x5c2159 === _0x3ad76b)
+                _0x1fced7['x'] = _0x4cc680['x'] + _0x4cc680[_0x510af6(0x17d)] + _0x1fced7[_0x510af6(0x189)];
+            else if (_0x5c2159 === _0x54e0a8)
+                _0x1fced7['y'] = _0x4cc680['y'] - _0x1fced7[_0x510af6(0x189)];
+            else
+                _0x1fced7['y'] = _0x4cc680['y'] + _0x4cc680[_0x510af6(0x17d)] + _0x1fced7['radius'];
+        } else if (_0x440e23 < _0x1fced7['radius'] * _0x1fced7['radius']) {
+            const _0x1e5e85 = Math[_0x510af6(0x18c)](_0x440e23);
+            const _0xce1dcc = _0x1fced7['radius'] - _0x1e5e85;
+            _0x1fced7['x'] += _0xa3965b / _0x1e5e85 * _0xce1dcc;
+            _0x1fced7['y'] += _0x8e950f / _0x1e5e85 * _0xce1dcc;
+        }
+    }
+}
+function _0x3911(_0x159827, _0x3b27d8) {
+    _0x159827 = _0x159827 - 0x178;
+    const _0x433ff1 = _0x433f();
+    let _0x39113d = _0x433ff1[_0x159827];
+    return _0x39113d;
+}
+function _0x5a78d5(_0x2012a5) {
+    const _0x1f0678 = _0x8b5556;
+    for (const _0x5c5d4b of _0x192e84) {
+        const _0x250b87 = Math[_0x1f0678(0x190)](_0x5c5d4b['x'], Math['min'](_0x2012a5['x'], _0x5c5d4b['x'] + _0x5c5d4b[_0x1f0678(0x17d)]));
+        const _0x2e0179 = Math[_0x1f0678(0x190)](_0x5c5d4b['y'], Math[_0x1f0678(0x192)](_0x2012a5['y'], _0x5c5d4b['y'] + _0x5c5d4b[_0x1f0678(0x17d)]));
+        const _0x14110d = _0x2012a5['x'] - _0x250b87, _0x1e673a = _0x2012a5['y'] - _0x2e0179;
+        if (_0x14110d * _0x14110d + _0x1e673a * _0x1e673a < _0x2012a5[_0x1f0678(0x189)] * _0x2012a5[_0x1f0678(0x189)])
+            return !![];
+    }
+    return ![];
+}
+function _0x5b6ca0() {
+    const _0x524083 = _0x8b5556;
+    const _0x355968 = view['x'], _0x597141 = view['y'];
+    const _0x2b1745 = view['x'] + view[_0x524083(0x18e)], _0x2fe19e = view['y'] + view[_0x524083(0x185)];
+    for (const _0x599633 of _0x192e84) {
+        if (_0x599633['x'] + _0x599633[_0x524083(0x17d)] < _0x355968 || _0x599633['x'] > _0x2b1745)
+            continue;
+        if (_0x599633['y'] + _0x599633['size'] < _0x597141 || _0x599633['y'] > _0x2fe19e)
+            continue;
+        ctx[_0x524083(0x187)] = _0x524083(0x179);
+        ctx[_0x524083(0x18d)] = '#646464';
+        ctx[_0x524083(0x186)] = 0x3;
+        ctx[_0x524083(0x18f)](_0x599633['x'] - view['x'], _0x599633['y'] - view['y'], _0x599633['size'], _0x599633[_0x524083(0x17d)]);
+        ctx[_0x524083(0x182)](_0x599633['x'] - view['x'], _0x599633['y'] - view['y'], _0x599633['size'], _0x599633[_0x524083(0x17d)]);
+    }
+}
+function _0x57789c(_0x223ff6, _0x866590, _0x432d32, _0x364357) {
+    const _0x14e600 = _0x8b5556;
+    if (_0x192e84[_0x14e600(0x17f)] === 0x0)
+        return !![];
+    const _0xbc8819 = _0x432d32 - _0x223ff6, _0x4f6d37 = _0x364357 - _0x866590;
+    for (const _0x3030ba of _0x192e84) {
+        if (_0x2606f2(_0x223ff6, _0x866590, _0xbc8819, _0x4f6d37, _0x3030ba['x'], _0x3030ba['y'], _0x3030ba['size'], _0x3030ba['size'])) {
+            return ![];
+        }
+    }
+    return !![];
+}
+function _0x433f() {
+    const _0x1380d4 = [
+        '350365lHJnQa',
+        '3332634DxUBPI',
+        'height',
+        'lineWidth',
+        'fillStyle',
+        '8pnRHow',
+        'radius',
+        'has',
+        'fill',
+        'sqrt',
+        'strokeStyle',
+        'width',
+        'fillRect',
+        'max',
+        'push',
+        'min',
+        '_0x111791',
+        'floor',
+        'body',
+        '1949521QCSWbt',
+        'add',
+        'getDate',
+        '6116589HfTyFf',
+        'splice',
+        '749480BPNvzX',
+        '#a0a0a0',
+        '3kDopIc',
+        '20jRiYuV',
+        '180664IRrncB',
+        'size',
+        'getFullYear',
+        'length',
+        'imul',
+        '7880880xpNuhc',
+        'strokeRect'
+    ];
+    _0x433f = function () {
+        return _0x1380d4;
+    };
+    return _0x433f();
+}
+function _0x2606f2(_0x54cd48, _0x45db80, _0x455a95, _0x8a1c96, _0x2c306d, _0x49aa92, _0x1fdcfb, _0x24c708) {
+    let _0x26c52b = 0x0, _0x2d3381 = 0x1;
+    const _0x470375 = [
+        -_0x455a95,
+        _0x455a95,
+        -_0x8a1c96,
+        _0x8a1c96
+    ];
+    const _0x2a9b57 = [
+        _0x54cd48 - _0x2c306d,
+        _0x2c306d + _0x1fdcfb - _0x54cd48,
+        _0x45db80 - _0x49aa92,
+        _0x49aa92 + _0x24c708 - _0x45db80
+    ];
+    for (let _0x339f4e = 0x0; _0x339f4e < 0x4; _0x339f4e++) {
+        if (_0x470375[_0x339f4e] === 0x0) {
+            if (_0x2a9b57[_0x339f4e] < 0x0)
+                return ![];
+        } else {
+            const _0x37870d = _0x2a9b57[_0x339f4e] / _0x470375[_0x339f4e];
+            if (_0x470375[_0x339f4e] < 0x0) {
+                if (_0x37870d > _0x2d3381)
+                    return ![];
+                if (_0x37870d > _0x26c52b)
+                    _0x26c52b = _0x37870d;
+            } else {
+                if (_0x37870d < _0x26c52b)
+                    return ![];
+                if (_0x37870d < _0x2d3381)
+                    _0x2d3381 = _0x37870d;
+            }
+        }
+    }
+    return !![];
 }
