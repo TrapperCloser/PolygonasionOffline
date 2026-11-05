@@ -1,1 +1,1121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+}
 
+body {
+    width: 100vw;
+    height: 100vh;
+    background:#2e2e2e;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    color: #13161a;
+}
+
+#game-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#game-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11000px;
+    height: 11000px;
+    background: linear-gradient(to bottom, #ffffff, #f8f9fa);
+    transform-origin: 0 0;
+}
+
+::-webkit-scrollbar{
+    color:#0088ff;
+    width: 5px;
+}
+
+#ui-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255, 255, 255, 0);
+    padding: 15px;
+    border-radius: 15px;
+    z-index: 10;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border: none;
+}
+
+.stat-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.stat-value {
+    color: #2c3e50;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#minimap {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border: 2px solid #83838361;
+    border-radius: 3px;
+    z-index: 10;
+}
+
+#bottom-ui {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    background: rgba(255, 255, 255, 0);
+    padding: 15px;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.progress-label {
+    color: #000000;
+    font-weight: bold;
+    min-width: 60px;
+}
+
+.progress-bar {
+    height: 20px;
+    background: rgba(236, 240, 241, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    border: 3px solid #272727;
+    position: relative;
+    flex-grow: 1;
+}
+
+.progress-fill {
+    height: 100%;
+    border-radius: 10px;
+    transition: width 0.3s;
+    box-shadow: 0 0 10px rgba(233, 69, 96, 0);
+}
+
+.level-fill {
+    background:#519e1e;
+}
+
+.score-fill {
+    background:#dbbd35;
+}
+
+.progress-value {
+    color: #2c3e50;
+    font-weight: bold;
+    min-width: 80px;
+    text-align: right;
+    font-size: 18px;
+}
+
+.bar-outline {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(44, 62, 80, 0.3);
+    border-radius: 10px;
+    pointer-events: none;
+}
+
+#game-menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(42, 47, 50);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    padding: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-content {
+    background: #d7e3ff;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    width: 1150px;
+    max-width: 95vw;
+    max-height: 90vh;
+    overflow: visible;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0;
+
+    position: relative;
+    box-sizing: border-box;
+}
+
+.menu-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    flex: 0 0 350px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.menu-right {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.game-logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: linear-gradient(#353535, #212121);
+    margin-bottom: 20px;
+    -webkit-background-clip: text;
+    padding: 10px 10px;
+    font-family: 'Ubuntu', sans-serif;
+    white-space: nowrap;
+}
+
+.game-subtitle {
+    font-size: 14px;
+    color: #585c6075;
+    margin-top: 30px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#game-menu p {
+    font-size: 14px;
+    margin: 30px 0;
+    color: #0b0e11;
+    line-height: 3;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-btn {
+    margin-top: 20px;
+    height: 45px;
+    width: 300px;
+    background:#6abb3b;
+    border: none;
+    border-radius: 3px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    box-shadow: inset 0 -4px #569731;
+}
+
+.menu-btn:hover {
+    outline: 3px solid #7bae4b;
+    outline-offset: 2px;
+}
+
+#game-over {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(20, 22, 28, 0.72);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+#game-over h1 {
+    font-size: 34px;
+    color: rgb(227, 228, 255);
+    margin-left: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+#game-over p {
+    font-size: 24px;
+    margin: 6px 0;
+    color: #e7e7e7;
+    text-align: left;
+    -webkit-text-stroke-color: #2424248d;
+    -webkit-text-stroke-width: 3px;
+    font-family: 'Ubuntu', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+#wave-indicator {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(87, 87, 87, 0.324);
+    padding: 5px 5px;
+    border-radius: 25px;
+    font-size: 8px;
+    font-weight: bold;
+    z-index: 20;
+    display: none;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.menu-content::-webkit-scrollbar {
+    width: 10px;
+}
+
+.menu-content::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 10px;
+}
+
+.menu-content::-webkit-scrollbar-thumb {
+    background: #8374b5;
+    border-radius: 10px;
+}
+
+.username-input {
+    margin: 0 0 20px 0;
+    height: 45px;
+    width: 300px;
+    border-color: #ebebeb00;
+    border-radius: 3px;
+    font-size: 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.username-input::placeholder {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.changelog {
+    background: white;
+    height: 340px;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    flex: 0 0 350px;
+    border-radius: 5px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.server-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 4px;
+    height: 15px;
+    width: 300px;
+    padding: 0 12px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.server-info * {
+    cursor: pointer;
+}
+
+.server-info.selected {
+    background: #bbc6dd;
+}
+
+.server-mode {
+    font-size: 12px;
+    font-weight: bold;
+    color: #000000;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: color 0.15s ease;
+}
+
+.server-mode:hover {
+    font-style: bold;
+    color: #6abb3b;
+    text-align: center;
+}
+
+.server-players {
+    font-size: 12px;
+    font-weight: 500;
+    color: #666;
+    padding-left: 12px;
+    border-left: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+
+.server-list {
+    width: 300px;
+    height: 96px;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.server-table-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 12px;
+    flex-shrink: 0;
+    font-size: 11px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: rgba(0, 0, 0, 0.55);
+}
+
+.server-rows {
+    flex: 1 1 auto;
+    min-height: 0;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.server-rows .server-info {
+    margin-bottom: 0;
+    width: 100%;
+    flex-shrink: 0;
+}
+
+.widget-placeholder {
+    height: 200px;
+    width: 400px;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    display: block;
+}
+
+.kill-counter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.kill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.kill-label {
+    font-size: 12px;
+    color: #e94560;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.kill-value {
+    font-size: 18px;
+    color: #2c3e50;
+    font-weight: bold;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.game-over-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 20px 0;
+}
+
+.menu-decoration {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: -1;
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    50% {
+        transform: translateY(-20px) translateX(20px);
+    }
+    100% {
+        transform: translateY(0) translateX(0);
+    }
+}
+
+
+#ui-container .stat-row:last-child {
+    margin-bottom: 0;
+}
+
+.progress-container:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1200px) {
+    .menu-content {
+        width: 95vw;
+        max-width: 900px;
+    }
+
+    .menu-discord,
+    .menu-left,
+    .changelog {
+        width: 280px;
+        min-width: 280px;
+        max-width: 280px;
+        flex: 0 0 280px;
+        padding: 8px;
+    }
+
+    iframe.discord-widget {
+        height: 200px;
+    }
+
+    .game-logo {
+        font-size: 24px;
+        padding: 6px;
+    }
+
+    .game-subtitle {
+        font-size: 12px;
+        margin-top: 12px;
+    }
+
+    .server-list {
+        width: 100%;
+        max-width: 260px;
+        height: 90px;
+    }
+
+    .server-info {
+        width: 100%;
+        height: 18px;
+        padding: 0 8px;
+    }
+
+    .username-input {
+        width: 100%;
+        max-width: 260px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .menu-btn {
+        width: 100%;
+        max-width: 260px;
+        height: 40px;
+        font-size: 16px;
+    }
+
+    .changelog {
+        height: 280px;
+    }
+
+    .changelog iframe {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.menu-btn:hover {
+    outline: 3px #7bae4b;
+}
+
+#ui-container,
+#bottom-ui,
+#minimap,
+#wave-indicator {
+    transition: all 0.3s ease;
+}
+
+.kill-item:hover .kill-value {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.menu-btn:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.menu-btn:disabled:hover {
+    transform: none;
+}
+
+#player-health-bar {
+    position: absolute;
+    width: 100px;
+    height: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 5;
+    display: none;
+    transition: opacity 0.3s ease;
+}
+
+#player-health-fill {
+    height: 100%;
+    border-radius: 5px;
+    transition: width 0.3s, background 0.3s;
+}
+
+/* yeah I added this sht instead of keyframes to piss off eternal */
+#player-health-fill {
+  --hp: 100;
+  background: linear-gradient(90deg,
+    hsl(calc(var(--hp) * 1.2), 100%, 50%),
+    hsl(calc(var(--hp) * 1.2), 100%, 40%));
+}
+.hp-95 { --hp: 95; }
+.hp-90 { --hp: 90; }
+.hp-85 { --hp: 85; }
+.hp-80 { --hp: 80; }
+.hp-75 { --hp: 75; }
+.hp-70 { --hp: 70; }
+.hp-65 { --hp: 65; }
+.hp-60 { --hp: 60; }
+.hp-55 { --hp: 55; }
+.hp-50 { --hp: 50; }
+.hp-45 { --hp: 45; }
+.hp-40 { --hp: 40; }
+.hp-35 { --hp: 35; }
+.hp-30 { --hp: 30; }
+.hp-25 { --hp: 25; }
+.hp-20 { --hp: 20; }
+.hp-low { --hp: 0; }
+.hp-burning { background: linear-gradient(90deg, #ff8c00, #ff4500); }
+.hp-impaled { background: linear-gradient(90deg, #8b0000, #660000); }
+.hp-slowed  { background: linear-gradient(90deg, #00ffff, #0088ff); }
+
+
+/* player info */
+.level-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.score-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    pointer-events: none;
+}
+
+.combined-bar {
+    position: relative;
+    height: 20px;
+    background: rgba(236, 240, 241, 0.8);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.player-name-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.player-name {
+    color: #000000;
+    stroke: 3px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+.upgrade-menu {
+    position: absolute;
+    bottom: 40px;
+    left: 40px;
+    padding: 15px 20px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 280px;
+    z-index: 15;
+    display: none;
+}
+
+.upgrade-menu h3 {
+    text-align: right;
+    margin-bottom: 12px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.upgrade-item {
+    display: flex;
+    align-items: center;
+    margin: 6px 0;
+    height: 20px;
+    cursor: pointer;
+}
+
+.upgrade-dot {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    flex-shrink: 0;
+}
+
+.upgrade-bar {
+    flex-grow: 1;
+    height: 12px;
+    background: #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin-right: 8px;
+    border: 1.5px solid rgba(81, 81, 81, 0.1);
+}
+
+.upgrade-fill {
+    height: 100%;
+    border-radius: 6px;
+    transition: width 0.3s ease-in-out;
+}
+
+.upgrade-level {
+    font-weight: bold;
+    color: #333;
+    width: 28px;
+    text-align: right;
+    font-size: 12px;
+    flex-shrink: 0;
+}
+
+.upgrade-body { 
+    background: linear-gradient(135deg, #db7854, #ff7854); 
+}
+.upgrade-health { 
+    background: linear-gradient(135deg, #ffb341, #ff9f1a); 
+}
+.upgrade-regen { 
+    background: linear-gradient(135deg, #45b7d1, #2a9cc4); 
+}
+.upgrade-penetration { 
+    background: linear-gradient(135deg, #82be5a, #5da430); 
+}
+.upgrade-bullethealth { 
+    background: linear-gradient(135deg, #feca57, #febc2e); 
+}
+.upgrade-bulletdmg { 
+    background: linear-gradient(135deg, #ff6161, #ff4757); 
+}
+.upgrade-reload { 
+    background: linear-gradient(135deg, #95ff87, #7ae86b); 
+}
+.upgrade-speed { 
+    background: linear-gradient(135deg, #278dcd, #1a76b4); 
+}
+
+.upgrade-help {
+    margin-top: 12px;
+    font-size: 11px;
+    color: #666;
+    text-align: center;
+    font-style: italic;
+    border-top: 1px solid #eee;
+    padding-top: 8px;
+}
+
+.upgrade-item:hover .upgrade-dot {
+    transform: scale(1.1);
+    transition: transform 0.2s ease;
+}
+
+.upgrade-item:hover .upgrade-level {
+    color: #000;
+}
+
+#game-over {
+    align-items: flex-start;
+    padding-left: 100px;
+}
+
+#game-over h1 {
+    margin-left: 0;
+}
+
+.game-over-stats {
+    align-items: flex-start;
+    text-align: left;
+}
+
+#player-name-above-bar {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgb(255, 255, 255);
+    -webkit-text-stroke: #434343;
+    -webkit-text-stroke-width: 1.5px;
+    font-weight: bold;
+    font-size: 36px;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 10;
+}
+
+.broadcast-message {
+    background: rgba(87, 87, 87, 0.7);
+    padding: 4px 12px;
+    border-radius: 15px;
+    font-size: 11px;
+    font-weight: 300;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    white-space: nowrap;
+}
+
+#performance-display {
+    position: absolute;
+    bottom: 175px;
+    right: 20px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: #2c3e50;
+    z-index: 10;
+    text-align: center;
+    min-width: 150px;
+}
+
+#performance-display .perf-title {
+    font-weight: bold;
+    margin-bottom: 4px;
+    font-size: 13px;
+}
+
+#broadcast-container {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    z-index: 20;
+    pointer-events: none;
+}
+
+.score-container,
+.wave-container,
+.level-container,
+.stats-panel {
+    background: transparent;
+    border: none;
+}
+
+body,
+body * {
+    cursor: auto;
+}
+
+button,
+.menu-btn,
+.upgrade-item,
+.username-input,
+a {
+    cursor: pointer;
+}
+
+.menu-btn:disabled {
+    cursor: not-allowed;
+}
+
+/* Tank Class Upgrade Menu*/
+
+#tank-upgrade-menu {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    z-index: 20;
+
+    display: none;
+    flex-wrap: wrap;
+    gap: 14px;
+
+    padding: 0;
+    background: transparent;
+    border-radius: 0;
+
+    /* Arras-style upgrade grid */
+    width: max-content;
+    max-width: calc(100vw - 28px);
+}
+
+#tank-upgrade-menu.active {
+    display: flex;
+}
+
+.tank-option {
+    position: relative;
+    box-sizing: border-box;
+
+    width: 125px;
+    height: 125px;
+    flex: 0 0 125px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    background: #8bc9d9;
+    border: 3px solid #555;
+    border-radius: 0;
+
+    padding: 5px;
+    overflow: hidden;
+    cursor: pointer;
+
+    transition:
+        transform 0.12s ease,
+        border-color 0.12s ease,
+        filter 0.12s ease;
+}
+
+.tank-option:nth-child(8n + 1) { background: #82b9ce; }
+.tank-option:nth-child(8n + 2) { background: #a8c985; }
+.tank-option:nth-child(8n + 3) { background: #e58287; }
+.tank-option:nth-child(8n + 4) { background: #c58aab; }
+.tank-option:nth-child(8n + 5) { background: #e4cf82; }
+.tank-option:nth-child(8n + 6) { background: #e8a995; }
+.tank-option:nth-child(8n + 7) { background: #9a85c9; }
+.tank-option:nth-child(8n + 8) { background: #91d5c3; }
+
+.tank-option::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.10) 0%,
+        transparent 48%,
+        rgba(0, 0, 0, 0.04) 100%
+    );
+    pointer-events: none;
+}
+
+.tank-option:hover {
+    border-color: #333;
+    filter: brightness(1.06);
+}
+
+.tank-option canvas {
+    position: relative;
+    z-index: 1;
+
+    width: 150px;
+    height: 110px;
+    flex-shrink: 0;
+    object-fit: contain;
+}
+
+
+.tank-option-name {
+    position: relative;
+    z-index: 2;
+
+    margin-top: 0;
+    width: 100%;
+
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+
+    text-shadow:
+        -1px -1px 0 #333,
+         1px -1px 0 #333,
+        -1px  1px 0 #333,
+         1px  1px 0 #333,
+         0px  2px 2px #333;
+}
+
+.tank-option:focus-visible {
+    outline: 3px solid white;
+    outline-offset: 2px;
+}
+
+
+.menu-discord {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    min-width: 350px;
+    max-width: 350px;
+    flex: 0 0 350px;
+    padding: 10px;
+    box-sizing: border-box;
+    gap: 10px;
+    overflow: hidden;
+}
+
+.discord-widget {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 4px;
+    background: #2f3136;
+}
+
+.menu-discord-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu-discord-buttons form {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-link-btn {
+    width: auto;
+    min-width: 125px;
+    padding: 6px 12px;
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 12px;
+    color: white;
+    text-align: center;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    top: 0;
+    transition: top 0.1s ease, background 0.1s ease;
+    box-sizing: border-box;
+}
+
+.menu-link-btn:active,
+.menu-link-btn:hover {
+    top: 1px;
+}
+
+.menu-link-teal {
+    background: #158999;
+    border-bottom: 2px solid #126672;
+    box-shadow: inset 0 -2px #126672;
+}
+
+.menu-link-teal:active,
+.menu-link-teal:hover {
+    background: #126672;
+    box-shadow: none;
+}
+
+.menu-link-blue {
+    background: #2A53FA;
+    border-bottom: 2px solid #294DE1;
+    box-shadow: inset 0 -2px #294DE1;
+}
+
+.menu-link-blue:active,
+.menu-link-blue:hover {
+    background: #294DE1;
+    box-shadow: none;
+}
+
+iframe.discord-widget {
+    width: 100%;
+    height: 250px;
+    border: none;
+    border-radius: 4px;
+    background: #2f3136;
+    display: block;
+    flex-shrink: 0;
+}
