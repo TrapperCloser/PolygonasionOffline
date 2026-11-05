@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Changelog</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<style>
+    body {
+    background: #dfedf5;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.header {
+    color: brown;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.h1{
+    color:black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+li {
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.p{
+    font-family: 'Ubuntu';
+}
+
+.footer {
+    color: rgb(176, 176, 176);
+    font-family: 'Ubuntu', sans-serif;
+}
+</style>
+<body>
+    <h1>Changelog</h1>
+    <hr>
+    <div>
+        <h2 class="header">28/10/26: Industrial Revolution</h2>
+        <hr>
+        <ul>
+            <li class="li">New tank classes and upgrades have been added.</li>
+            <li class="li">Tank Branch consists of Tiers now.</li>
+            <li class="li">Tier-1 Consists of the Starter Tank, Basic Tank.</li>
+            <li class="li">Tier-2 Consists Twin, Machine Gunner and Sniper.</li>
+            <li class="li">Tier-3 Only consists of Triplet branching from Twin.</li>
+            <li class="li">Tier-4 Only consists of Pentashot branching from Triplet.</li>
+            <li class="li">Added new mechanics for automatically spinning by pressing <b>C</b> and automatically firing by <b>E</b>.</li>
+            <li class="li"><span style="color: rgb(255, 91, 91)"><b>More classes and branches will be added in future updates.</b></span></li>
+            <li class="li">Fixed a bug where <span style="color: rgb(134, 0, 216);">Stunner Crasher</span> would permanently paralyze the player.</li>
+            <li class="li">Stat upgrades have been rebalanced.</li>
+            <li class="li">Minor bug fixes.</li>
+        </ul>
+    </div>
+    <div>
+        <h2 class="header">26/10/26: I love throwing rocks</h2>
+        <hr>
+        <ul>
+            <li class="li">The 4 types of map generations have been completely revamped.</li>
+            <li class="li">Rock patches have been added around the map.</li>
+            <li class="li">Fixed the 'Back to Menu' button respawning the player instead of returning them back to the game menu.</li>
+            <li class="li">Enemies now spawn randomly around the map and far away from players.</li>
+            <li class="li"><span style="color: rgb(255, 91, 91)"><b>This game is still under beta testing so expect more bugs until they get fixed.</b></span></li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2 class="header">24/10/26: Were back..?</h2>
+        <hr>
+        <ul>
+            <li class="li">Minor UI changes.</li>
+            <li class="li">Fixed some of the map generations, The new ones will be more better.</li>
+            <li class="li">Removed Crossroads, A better version will be released soon.</li>
+            <li class="li">New leveling system added. Leveling does not depend on the total score bar but the requirement of xp.</li>
+            <li class="li">Fixed the game menu's visualization.</li>
+            <li class="li">Minor patches related to entities.</li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2 class="header">1/11/25: Its crashin' time</h2>
+        <hr>
+        <ul>
+            <li class="li">Added <i>12 new crashers</i> to the game alongside with nest areas.</li>
+            <li class="li">Expanded map because it felt too less-spacey.</li>
+            <li class="li">Added performance metrics above the minimap.</li>
+            <li class="li">Added <span style="color: grey">04 17 14 08 04</span></li>
+            <li class="li">Added a proper tank upgrade system with skillpoints.</li>
+            <li class="li">Changed the styling of the game menu.</li>
+            <li class="li">Some minor fixes and misc stuff.</li>
+        </ul>
+    </div>
+    
+</body>
+</html>
+
+<!--
+A01
+B02
+C03
+D04
+E05
+F06
+G07
+H08
+I09
+J10
+K11
+L12
+M13
+N14
+O15
+P16
+Q17
+R18
+S19
+T20
+U21
+V22
+W23
+X24
+Y25
+Z26
+-->
